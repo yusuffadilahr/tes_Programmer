@@ -1,0 +1,24 @@
+###
+
+POST http://localhost:5000/pegawai
+Content-Type: application/json
+
+{
+    "name": "Yusuf",
+    "jabatan": "Manager"    
+}
+
+###
+GET http://localhost:5000/pegawai
+
+###
+PUT http://localhost:5000/pegawai/1
+Content-Type: application/json
+
+{
+    "name": "Yusuf",
+    "jabatan": "Programmer"    
+}
+
+###
+DELETE http://localhost:5000/pegawai/1
