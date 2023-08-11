@@ -13,6 +13,10 @@ import AverageCalculator from './pages/tes-programmer/CalculatoMeans'
 import Services from './pages/services/Services'
 import BookingForm from './pages/services/BookingForm'
 import BookingsTab from './pages/services/BookingsTab'
+import Reports from './pages/reports/Report'
+import ReportsTab from './pages/reports/ReportTab'
+import ReportPrev from './component/ReportPrev'
+import EditReport from './pages/reports/EditReport'
 
 
 const App = () => {
@@ -98,10 +102,24 @@ const App = () => {
           <br /><br /><br />
           <Footer />
         </Route>
+        
+        <Route path="/report">
+          <Navbar /><br /><br /><br /><br /><br />
+          <Reports /><br /><br /><br /><br /><br />
+          <Footer />
+        </Route>
+        <Route path="/reportstab">
+          <Navbar /><br /><br /><br /><br /><br /><br />
+          <ReportsTab /><br />
+          <ReportPrev /><br />
+        </Route>
+        <Route path="/editreports/:id">
+          <Navbar /><br /><br /><br /><br /><br /><br />
+          <EditReport /><br />
+        </Route>
       </Switch>
-
     </BrowserRouter>
-  )
+  ) 
 }
 
 export default App

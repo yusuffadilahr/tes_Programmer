@@ -63,6 +63,9 @@ const Navbar = () => {
                                 <a className="navbar-item" href='/bookings' style={{ backgroundColor: '#fff' }}>
                                     Antrian
                                 </a>
+                                <a className="navbar-item" href='/report' style={{ backgroundColor: '#fff' }}>
+                                    Catatan/Laporan
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -100,6 +103,9 @@ const Navbar = () => {
                         </a>
                         <a className="navbar-item" href='/bookings' style={{ backgroundColor: '#fff' }}>
                             Antrian
+                        </a>
+                        <a className="navbar-item" href='/report' style={{ backgroundColor: '#fff' }}>
+                            Catatan/Laporan
                         </a>
                     </div>
                 </div>

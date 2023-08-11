@@ -32,7 +32,7 @@ const Pegawai = () => {
                 jabatan: jabatan
             });
             window.alert('Mantap! Pegawai baru berhasil di tambahkan!');
-            history.push('/dashboard');
+            history.push('/');
         } catch (error) {
             if (error.response) {
                 window.alert('Terjadi kesalahan pada server, silahkan coba lagi nanti!');

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 11, 2023 at 07:00 PM
+-- Generation Time: Aug 11, 2023 at 08:03 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.1
 
@@ -64,7 +64,31 @@ CREATE TABLE `pegawai` (
 --
 
 INSERT INTO `pegawai` (`id`, `name`, `jabatan`, `createdAt`, `updatedAt`) VALUES
-(2, 'Yusuf', 'Programmer', '2023-08-11 14:55:42', '2023-08-11 14:55:51');
+(2, 'Yusuf', 'Programmer', '2023-08-11 14:55:42', '2023-08-11 14:55:51'),
+(3, 'Ranjaw', 'Manager', '2023-08-11 17:15:15', '2023-08-11 17:16:51');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `reports`
+--
+
+CREATE TABLE `reports` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `reportIssue` varchar(255) NOT NULL,
+  `createdAt` datetime NOT NULL,
+  `updatedAt` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `reports`
+--
+
+INSERT INTO `reports` (`id`, `name`, `reportIssue`, `createdAt`, `updatedAt`) VALUES
+(15, 'Ardi', 'Bagus banget pelayanannya', '2023-07-31 06:24:26', '2023-07-31 06:24:26'),
+(17, 'Yusuf', 'Mantap', '2023-08-11 18:00:25', '2023-08-11 18:00:25'),
+(18, 'Tester', 'Mantap\n', '2023-08-11 18:01:55', '2023-08-11 18:01:55');
 
 --
 -- Indexes for dumped tables
@@ -83,6 +107,12 @@ ALTER TABLE `pegawai`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `reports`
+--
+ALTER TABLE `reports`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -96,7 +126,13 @@ ALTER TABLE `bookings`
 -- AUTO_INCREMENT for table `pegawai`
 --
 ALTER TABLE `pegawai`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `reports`
+--
+ALTER TABLE `reports`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
